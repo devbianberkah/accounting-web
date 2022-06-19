@@ -10,7 +10,7 @@
                 Umur : {{age}}
             </li>
             <li class="list-group-item">
-                Job : {{designation}}
+                Job  : {{designation}}
             </li>
          </ul>    
         </div>

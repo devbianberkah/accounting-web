@@ -8,18 +8,17 @@
         </div>
       </div>
     </div>
-  <CustomerComponent age="20" name="Sukma" designation="Front End" />
-
+  <AuthUserComponent/>  
   </div>
 </template>
 <script>
-import CustomerComponent from "@/components/CustomerComponent.vue";
+import AuthUserComponent from './components/AuthUserComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    CustomerComponent
-}
+    AuthUserComponent,
+  }
 }
 </script>
 
