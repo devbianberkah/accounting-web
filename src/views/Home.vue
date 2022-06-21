@@ -108,6 +108,53 @@
                     </div>
                 </div>
             </div>
+            <!-- Details List -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>
+                            Transaksi Terakhir
+                        </h2>
+                        <a href="#" class="btn">Tampilkan Semua</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nama</td>
+                                <td>Harga</td>
+                                <td>Pembayaran</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pembayaran Pajak</td>
+                                <td>Rp10.000,-</td>
+                                <td>Tunai</td>
+                                <td>Lunas</td>
+                            </tr>
+                            <tr>
+                                <td>Pembayaran Pajak</td>
+                                <td>Rp10.000,-</td>
+                                <td>Tunai</td>
+                                <td>Lunas</td>
+                            </tr>
+                            <tr>
+                                <td>Pembayaran Pajak</td>
+                                <td>Rp10.000,-</td>
+                                <td>Tunai</td>
+                                <td>Lunas</td>
+                            </tr>
+                            <tr>
+                                <td>Pembayaran Pajak</td>
+                                <td>Rp10.000,-</td>
+                                <td>Tunai</td>
+                                <td>Lunas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </template>
