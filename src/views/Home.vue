@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="my-container">
         <div class="navigation" :class="{active:navActive}">
             <ul>
                 <li>
@@ -71,12 +71,12 @@
                 </div>
             </div>
             <div class="cardBox">
-                <div class="row card">
-                    <div class="col-md-8">
+                <div class="card">
+                    <div>
                         <div class="numbers">1,504</div>
                         <div class="cardName">Jumlah Transaksi</div>
                     </div>
-                    <div class="iconBx col-md-4">
+                    <div class="iconBx">
                         <i class="fa fa-eye text-primary"></i>
                     </div>
                 </div>
@@ -112,12 +112,65 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>
-                            Transaksi Terakhir
-                        </h2>
-                        <a href="#" class="btn">Tampilkan Semua</a>
+                        <h4>
+                            Laporan Penjualan
+                        </h4>
+                        <a href="#" class="btn btn-primary">Tampilkan Semua</a>
                     </div>
-                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Barang</th>
+                                <th>Harga</th>
+                                <th>Pembayaran</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Lunas</td>
+                                <td><span class="status delivered">Dikirim</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Tunai</td>
+                                <td><span class="status delivered">Dikirim</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Tunai</td>
+                                <td><span class="status inprogress">Dalam Proses</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Tunai</td>
+                                <td><span class="status return">Retur</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Tunai</td>
+                                <td><span class="status return">Retur</span></td>
+                            </tr>
+                             <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Tunai</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                             <tr>
+                                <td>Kulkas</td>
+                                <td>Rp10.000</td>
+                                <td>Tunai</td>
+                                <td><span class="status delivered">Dikirim</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

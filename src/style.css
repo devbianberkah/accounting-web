@@ -1,7 +1,7 @@
 #app {
    font-family: 'Poppins', sans-serif;
    margin: 0;
-   padding:0;
+   padding:0.75rem 2rem;
    box-sizing: border-box;
   }
   :root
@@ -19,19 +19,23 @@
     overflow-x: hidden;
   }
 
-  .container
+  .my-container
   {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
   }
 
   .navigation
   {
-    position: fixed;
-    width: 250px;
-    height: 100%;
+    position: relative;
+    width: 200px;
+    height: 100vh;
     background-color: var(--blue);
     border-left : 3px solid var(--blue);
+    border-top-left-radius: 10px;
     transition: 0.5s;
     overflow: hidden;
   }
@@ -57,6 +61,13 @@
   }
   .navigation ul li:hover,
   .navigation ul li.hovered
+  {
+    background: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .navigation ul li.active
   {
     background: var(--white);
     border-top-left-radius: 10px;
@@ -211,9 +222,11 @@
   .cardBox
   {
     position: relative;
-    width: 100%;
-    padding: 20px;
+    /* width: 100%; */
+    /* padding: 10px; */
     display: grid;
+    justify-content: space-evenly;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: repeat(4,1fr);
     grid-gap: 15px;
   }
@@ -223,39 +236,45 @@
     background-color: var(--white);
     padding:15px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    display: flexbox;
+    transition: 0.1s;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
     }
 
   .cardBox .card .numbers
   {
     position: relative;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.5em;
     color: var(--blue)
   }
   .cardBox .card .cardName
   {
     color: var(--black2);
-    font-size:1em;
+    font-size:.9em;
     margin-top: 2px;
+    width: 100vh;
   }
   .cardBox .card .iconBx
   {
-    font-size: 2em;
-    color: var(--black2)
+    font-size: 1.5em;
+    color: var(--black2);
+    position: absolute;
+    right: 10px;
   }
   .cardBox .card:hover
   {
-      background-color: var(--blue)
+      /* background-color: var(--blue) */
+      transform: scale(1.05);
   }
   .cardBox .card:hover .numbers,
   .cardBox .card:hover .cardName,
   .cardBox .card:hover .iconBx
   {
-     color: var(--white);
+     /* color: var(--white); */
+     /* transform: scale(1.05); */
   }
   .details
   {
@@ -271,7 +290,7 @@
   {
     position: relative;
     display: grid;
-    min-height: 500px;
+    /* min-height: 500px; */
     background-color: var(--white);
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
@@ -283,12 +302,85 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  .cardHeader h2
+  .cardHeader h4
   {
     font-weight: 500;
     color: var(--blue)
   }
+.details table
+{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.details table thead th
+{
+  font-weight: 600;
+}
+.details table thead th:last-child
+{
+  text-align: right;
+}
+.details .recentOrders table tr
+{
+  color: var(--black1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .recentOrders table tr:last-child
+{
+  border-bottom: none;
+}
+.details .recentOrders table tr:hover
+{
+  background-color: var(--blue);
+  color: var(--white)
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+}
 
+.details .recentOrders table tr td
+{
+  padding: 10px;
+}
+.details .recentOrders table tr td:last-child
+{
+  text-align: end;
+}
+.status.delivered
+{
+  padding: 2px 15px;
+  background-color: rgb(31, 185, 100);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.inprogress
+{
+  padding: 2px 15px;
+  background-color: rgb(196, 199, 33);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.return
+{
+  padding: 2px 15px;
+  background-color: rgb(185, 8, 8);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.status.pending
+{
+  padding: 2px 15px;
+  background-color: rgb(157, 54, 205);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
   
  
