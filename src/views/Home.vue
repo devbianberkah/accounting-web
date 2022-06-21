@@ -54,7 +54,7 @@
             </ul>
         </div>
         <!-- Main -->
-        <div class="main">
+        <div class="main" :class="{active:mainActive}">
             <div class="topbar">
                 <div class="toogle">
                     <a href="#"  @click="toogleNavBar"><span><i class="fa fa-list"></i></span></a>
@@ -70,6 +70,44 @@
                     <img src="#" />
                 </div>
             </div>
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">674</div>
+                        <div class="cardName">Transaksi</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-cart-shopping"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">50</div>
+                        <div class="cardName">Sukses</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-diagram-successor"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">150</div>
+                        <div class="cardName">Waiting Approval</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="fa fa-stopwatch"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -79,6 +117,7 @@ export default {
     data : function () {
         return {
             navActive : false,
+            mainActive: false,
         }
     },
     methods: {
@@ -90,6 +129,7 @@ export default {
                 },
                 toogleNavBar :function(e) {
                     this.navActive = !this.navActive;
+                    this.mainActive = !this.mainActive;
                     console.log(this.navActive);
                 }
         }
