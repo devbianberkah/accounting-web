@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
+    <div class="">
         <div class="navigation" :class="{active:navActive}">
             <ul>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fa fa-bolt"></i></span>
-                        <span class="title">Brand Name</span>
+                        <span class="title">Akuntansi</span>
                     </a>
                 </li>
                 <li @mouseenter="addClass"
@@ -71,40 +71,40 @@
                 </div>
             </div>
             <div class="cardBox">
-                <div class="card">
-                    <div>
+                <div class="row card">
+                    <div class="col-md-8">
                         <div class="numbers">1,504</div>
-                        <div class="cardName">Daily Views</div>
+                        <div class="cardName">Jumlah Transaksi</div>
                     </div>
-                    <div class="iconBx">
-                        <i class="fa fa-eye"></i>
+                    <div class="iconBx col-md-4">
+                        <i class="fa fa-eye text-primary"></i>
                     </div>
                 </div>
                 <div class="card">
                     <div>
                         <div class="numbers">674</div>
-                        <div class="cardName">Transaksi</div>
+                        <div class="cardName">Sukses</div>
                     </div>
                     <div class="iconBx">
-                        <i class="fa fa-cart-shopping"></i>
+                        <i class="fa fa-cart-shopping text-success"></i>
                     </div>
                 </div>
                 <div class="card">
                     <div>
                         <div class="numbers">50</div>
-                        <div class="cardName">Sukses</div>
+                        <div class="cardName">Gagal</div>
                     </div>
                     <div class="iconBx">
-                        <i class="fa fa-diagram-successor"></i>
+                        <i class="fa fa-stop-circle text-danger"></i>
                     </div>
                 </div>
                 <div class="card">
                     <div>
                         <div class="numbers">150</div>
-                        <div class="cardName">Waiting Approval</div>
+                        <div class="cardName">Menunggu Approval</div>
                     </div>
                     <div class="iconBx">
-                        <i class="fa fa-stopwatch"></i>
+                        <i class="fa fa-stopwatch text-warning"></i>
                     </div>
                 </div>
             </div>
@@ -117,42 +117,7 @@
                         </h2>
                         <a href="#" class="btn">Tampilkan Semua</a>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Nama</td>
-                                <td>Harga</td>
-                                <td>Pembayaran</td>
-                                <td>Status</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pembayaran Pajak</td>
-                                <td>Rp10.000,-</td>
-                                <td>Tunai</td>
-                                <td>Lunas</td>
-                            </tr>
-                            <tr>
-                                <td>Pembayaran Pajak</td>
-                                <td>Rp10.000,-</td>
-                                <td>Tunai</td>
-                                <td>Lunas</td>
-                            </tr>
-                            <tr>
-                                <td>Pembayaran Pajak</td>
-                                <td>Rp10.000,-</td>
-                                <td>Tunai</td>
-                                <td>Lunas</td>
-                            </tr>
-                            <tr>
-                                <td>Pembayaran Pajak</td>
-                                <td>Rp10.000,-</td>
-                                <td>Tunai</td>
-                                <td>Lunas</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    
                 </div>
             </div>
         </div>
