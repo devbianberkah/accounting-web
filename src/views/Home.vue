@@ -172,7 +172,58 @@
                         </tbody>
                     </table>
                 </div>
+                  <!-- customer list -->
+                    <div class="recentCustomers">
+                        <div class="cardHeader">
+                            <h4>Pelanggan</h4>
+                        </div>
+                        <table>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="https://cdn.pixabay.com/photo/2022/06/22/16/10/cathedral-7278228_1280.jpg"/>
+                                    </div>
+                                </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                                                <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="https://cdn.pixabay.com/photo/2022/06/22/16/10/cathedral-7278228_1280.jpg"/>
+                                    </div>
+                                </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                                                <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="https://cdn.pixabay.com/photo/2022/06/22/16/10/cathedral-7278228_1280.jpg"/>
+                                    </div>
+                                </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                                                <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="https://cdn.pixabay.com/photo/2022/06/22/16/10/cathedral-7278228_1280.jpg"/>
+                                    </div>
+                                </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                                                <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="https://cdn.pixabay.com/photo/2022/06/22/16/10/cathedral-7278228_1280.jpg"/>
+                                    </div>
+                                </td>
+                                <td><h4>David<br><span>Italy</span></h4></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- end customer -->
             </div>
+            <!-- end details list -->
+          
         </div>
     </div>
 </template>
